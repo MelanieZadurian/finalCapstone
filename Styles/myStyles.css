@@ -1,0 +1,232 @@
+/* This is my stylesheet for the pages of my website on Avian husbandry (index.html, myBirds.html, nutrition.html, and enrichment.html)*/
+
+/* This is formatting for the whole page in general.
+It aligns the text to the centre, sets the font as Arial, font size to 1.5vw, and color to a darkish green. */
+* {
+    text-align: center;
+    font-family: Arial;
+    font-size: 1.5vw;
+    color: #1C6758;
+}
+
+/* This is formatting for the body.
+It sets the width and height, and sets the background as a gradient from very pale green to darker green.*/
+body {
+    width: 90vw;
+    height: auto;
+    margin: 5vw auto;
+    background: -webkit-linear-gradient(#EEF2E6, #4fa87d);
+}
+
+/* This is formatting for the footer.
+It sets the width and height, as well as the padding and margin.*/
+footer {
+    width: 90vw;
+    height: auto;
+    padding: 2vw;
+    margin: 5vw auto;
+}
+
+/* This is formatting for h1 headings.
+It sets the font size and line height.*/
+h1 {
+    font-size: 8vw;
+    line-height: 8vh;
+}
+
+/* This is formatting for h2 headings.
+It sets the font size and margin.*/
+h2 {
+    font-size: 4vw;
+    margin: 0.6vw;
+}
+
+/* This is formatting for list elements within my nav list.
+It sets the display to inline, and sets the margin.*/
+#navList > li {
+    display: inline;
+    margin: 1vw;
+}
+
+/* This is formatting for links.
+It changes the background colour, colour, padding, font-size, and gives it softer corners (border-radius).*/
+a {
+    background-color: #1C6758;
+    color: #dde8c8;
+    padding: 1vw;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+
+/* These next three set the left and right padding for the homeLink, birdsLink, and nutritionLink elements.
+I did this because I wanted them to look a bit more even when compared to the fourth enrichmentLink element.*/
+#homeLink {
+    padding-left: 2.3vw;
+    padding-right: 2.3vw;
+}
+
+#birdsLink {
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+}
+
+#nutritionLink {
+    padding-left: 1.7vw;
+    padding-right: 1.7vw;
+}
+
+/* This is formatting for figures.
+It sets the width, height, and margin.*/
+figure {
+    width: 88vw;
+    height: auto;
+    margin: auto;
+}
+
+/* This is formatting for figcaptions.
+It sets the font size, margin, and changes the font-style to italic.*/
+figcaption {
+    font-size: 1.2vw;
+    margin: 0.5vw;
+    font-style: italic;
+}
+
+/* This is formatting for images.
+It sets the width, height, and gives it a border with soft corners.*/
+img {
+    width: 88vw;
+    height: auto;
+    border: 0.5vw #1C6758 solid;
+    border-radius: 5vw;
+}
+
+/* This is formatting for forms.
+It sets the text align to left, softens the corners of the border, set the padding, width, height, and margin, and gives it a dark green background colour.*/
+form {
+    text-align: left;
+    border-radius: 3vw;
+    padding: 2vw;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    background-color: #1C6758;
+}
+
+/* This is formatting for labels.
+It changes the text colour to a very pale green.*/
+label {
+    color: #cff0be;
+}
+
+/* This is formatting for elements with the para class (these are paragraphs, but I used the para class so I could choose for some p elements to be unaffected).
+It sets the width, height, padding, and margin. It changes the background colour to a light green, and adds a soft cornered border.*/
+.para {
+    width: 70vw;
+    height: auto;
+    padding: 2vw;
+    margin: auto;
+    background-color: #cff0be;
+    border: 0.5vw #1C6758 solid;
+    border-radius: 5vw;
+}
+
+/* This is formatting for the aside.
+It sets the font style to italic, and changes the font size.*/
+aside {
+    font-style: italic;
+    font-size: 2vw;
+}
+
+/* This is formatting for elements with the birdPhoto class. These are the images of my birds on the My Birds page.
+It sets the width, height, and margin. It also adds a soft cornered border.*/
+.birdPhoto {
+    width: 44vw;
+    height: auto;
+    margin: auto;
+    border: 0.5vw #1C6758 solid;
+    border-radius: 5vw;
+}
+
+/* This is formatting for my table.
+It sets the width, height, padding and margin. It also changes the background colour and adds a slightly soft cornered border.*/
+table {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    padding: 0.2vw;
+    background-color: #cff0be;
+    border: 0.5vw #1C6758 solid;
+    border-radius: 1vw;
+}
+
+/* This is formatting for the td and th (the specific items within my table).
+It gives them their own borders, and changes the colour and background colour.*/
+td, th {
+    border: 1px #1C6758 solid;
+    color: #1C6758;
+    background-color: #e7ffdb;
+}
+
+/* This is formatting for my list of vegetables (id="vegList") on my nutrition page.
+It sets the width, height, padding, and margin. It also changes the background colour,
+colour, and adds a soft cornered border. I've set list-style-position to inside, because it makes the 
+formatting of the bullet points look nicer.*/
+#vegList {
+    width: 20vw;
+    height: auto;
+    padding: 2vw;
+    margin: auto;
+    background-color: #cff0be;
+    border: 0.5vw #1C6758 solid;
+    border-radius: 5vw;
+    list-style-position: inside;
+}
+
+/* This is formatting for the list elements within my list of vegetables (id="vegList").
+It aligns the text to left, adds some left padding, and sets the margin to auto.*/
+#vegList > li {
+    text-align: left;
+    padding-left: 2vw;
+    margin: auto;
+}
+
+/* This is formatting for my copyright element (id="copyright").
+It changes the font size and the padding.*/
+#copyright {
+    font-size: 1vw;
+    padding: 1vw;
+}
+
+/* This is formatting for my blockquote.
+It changes the font style to italics, and adds a text indent.*/
+blockquote {
+    font-style: italic;
+    text-indent: 3vw;
+}
+
+/* This is formatting for my species form on my enrichment page (id=speciesForm).
+It aligns the text to the centre, and changes the line height.*/
+#speciesForm {
+    text-align: center;
+    line-height: 4vh;
+}
+
+.likeButton {
+    color: grey;
+    background-color: white;
+}
+
+.likedButton {
+    color: white;
+    background-color: palevioletred;
+}
+
+.saveButton {
+    color: grey;
+    background-color: white;
+}
+
+.savedButton {
+    color: white;
+    background-color: #1C6758;
+}

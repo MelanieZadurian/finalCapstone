@@ -1,0 +1,136 @@
+<!--This is the html file for the last page (Enrichment) of a website on Avian Husbandry, which is something I am interested in.
+Across this page, and the other pages of my website, I have made sure to include all the requirements listed in the compulsory task.-->
+
+<!--DOCTYPE indicates which version of html to load -->
+<!DOCTYPE html>
+
+<!-- html element with head and body elements nested inside it-->
+<html lang="en">
+
+    <head>
+        <!--head element containing the title 'Avian Husbandry - Enrichment' as well as
+        the stylesheet information. I've used the same stylesheet for all of my pages, as I wanted them to look reasonably consistent. -->
+
+        <title>Avian Husbandry - Enrichment</title>
+
+        <link href="../Styles/myStyles.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body id="myBody">
+        <!-- Body contains a header, main, and footer.-->
+
+        <header>
+            <!-- Header contains a main heading for the page, as well as the nav which
+            has links to other pages.-->
+
+            <h1 id="enrichmentHeader">Enrichment</h1>
+
+            <nav>
+                <ul id="navList" style="list-style-type: none;">
+                    <li><a href="../index.html" id="homeLink">Home</a></li>
+                    <li><a href="./myBirds.html" id="birdsLink">My birds</a></li>
+                    <li><a href="./nutrition.html" id="nutritionLink">Nutrition</a></li>
+                    <li><a href="#enrichmentHeader" id="enrichmentLink">Enrichment</a></li>
+                    <li><a href="./saveForLater.html" id="saveForLaterLink">Saved for Later</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <br>
+        
+        <main>
+            <!--Main contains three divs-->
+
+            <div id="enrichIntro">
+                <!--This div contains an introductory paragraph about enrichment-->
+
+                <p class="para">Many parrots are as intelligent as human toddlers, so it's really important to keep their brains active! A bored parrot is an unhappy parrot, and in fact boredom can lead to very real health issues for birds. Plucking is a condition that is often caused by a lack of enrichment, and something that we really want to avoid!
+                    <br>
+                    <br>
+                    Below are some ideas to think about, when you come to provide enrichment for your feathered friend!</p>
+            </div>
+
+            <br>
+
+            <div id="foraging">
+                <!--This div contains the h2 heading 'Foraging', along with a short paragraph about this-->
+
+                <h2>Foraging</h2>
+
+                <p class="para">Foraging is a really important part of enrichment for your parrot! In the while, birds spend a lot of their time foraging, either in trees or on the ground, and we want to replicate that natural impulse with our pet birds too!
+                    <br>
+                    <br>
+                    You can buy or make foraging toys, ranging in difficulty from super simple (as easy as just adding some shredded strips of paper over their food bowl!) to very complex. Try to understand your parrots starting skill level, and work with them on developing their foraging ability!</p>
+
+            </div>
+
+            <br>
+
+            <div id="toys">
+                <!--This div contains the h2 heading 'Toys', along with a short paragraph about this, and a radio form about your bird's species.
+                As mentioned in the compulsory task, this form doesn't actually do anything at the moment.
+                This div also contains a link to the Northern Parrots website.-->
+
+                <h2>Toys</h2>
+
+                <p class="para">All birds need toys! Toys that can be destroyed/shredded are particularly important, though having to constantly re-buy these can be pricey!
+                    <br>
+                    <br>
+                    It's a good idea to provide your bird with a mix of store-bought and home-made toys. All kinds of things can be toys, from shredded paper to cardboard tubes! Your bird is likely to have certain kinds of toys that they prefer, so it's your job to work out which ones they most enjoy.
+                </p>
+
+                <br>
+
+                <form id="speciesForm">
+
+                    <p class="para">Different birds need different toys! Select your bird's species below:</p>
+    
+                    <input type="radio" id="budgie" name="birdType" value="Budgie">
+                    <label for="budgie">Budgie</label>
+                    <br>
+    
+                    <input type="radio" id="lovebird" name="birdType" value="Lovebird">
+                    <label for="lovebird">Lovebird</label>
+                    <br>
+    
+                    <input type="radio" id="cockatiel" name="birdType" value="Cockatiel">
+                    <label for="cockatiel">Cockatiel</label>
+                    <br>
+    
+                    <input type="radio" id="conure" name="birdType" value="Conure">
+                    <label for="conure">Conure</label>
+                    <br>
+    
+                    <input type="radio" id="quaker" name="birdType" value="Quaker">
+                    <label for="quaker">Quaker</label>
+                    <br>
+    
+                    <input type="submit" value="Submit">
+                </form>
+
+                <br>
+
+                <a href="https://www.northernparrots.com/" target="_blank">Vist the Northern Parrots website for toy ideas!</a>
+
+            </div>
+
+            <br>
+
+
+        </main>
+
+        <footer>
+            <!--The footer contains a 'back to top' button to take you instantly back up to the top of the page,
+            as well as a copyright.-->
+            <a href="#myBody" id="backTop">Back to top</a>
+            <br>
+            <p id="copyright">&copy; Melanie Zadurian 2022</p>
+        </footer>
+
+        <script type="text/javascript" src="../JavaScript/birdWebsite.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,167 @@
+<!--This is the html file for the third page (Nutrition) of a website on Avian Husbandry, which is something I am interested in.
+Across this page, and the other pages of my website, I have made sure to include all the requirements listed in the compulsory task.-->
+
+<!--DOCTYPE indicates which version of html to load -->
+<!DOCTYPE html>
+
+<!-- html element with head and body elements nested inside it-->
+<html lang="en">
+
+    <head>
+        <!--head element containing the title 'Avian Husbandry - Nutrition' as well as
+        the stylesheet information. I've used the same stylesheet for all of my pages, as I wanted them to look reasonably consistent. -->
+
+        <title>Avian Husbandry - Nutrition</title>
+
+        <link href="../Styles/myStyles.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body id="myBody">
+        <!-- Body contains a header, main, and footer.-->
+
+        <header>
+            <!-- Header contains a main heading for the page, as well as the nav which
+            has links to other pages.-->
+
+            <h1 id="nutritionHeader">Nutrition</h1>
+
+            <nav>
+
+                <ul id="navList" style="list-style-type: none;">
+                    <li><a href="../index.html" id="homeLink">Home</a></li>
+                    <li><a href="./myBirds.html" id="birdsLink">My birds</a></li>
+                    <li><a href="#nutritionHeader" id="nutritionLink">Nutrition</a></li>
+                    <li><a href="./enrichment.html" id="enrichmentLink">Enrichment</a></li>
+                    <li><a href="./saveForLater.html" id="saveForLaterLink">Saved for Later</a></li>
+                </ul>
+
+            </nav>
+            
+        </header>
+
+        <br>
+
+        <main>
+            <!--Main contains four divs-->
+
+            <div id="nutritionIntro">
+                <!--This div contains an introductory paragraph about nutrition, and a quote from a writer on the Northern Parrots blog-->
+
+                <p class="para">Nutrition is one of the most important aspects, if not the single most important aspect, of good avian husbandry. 50 years ago, many people kept parrots as pets and believed that feeding them only seed, with the occasional treat, was perfectly fine.
+                    <br>
+                    <br>
+                    Thankfully, avian nutrition has evolved since then, and we now have a far better understanding of what makes a good parrot diet. </p>
+
+                <br>
+
+                <div class="quote">
+
+                    <p><b>Here is a quote from Valley Vets, on the Northern Parrots blog:</b></p>
+                    <blockquote cite="https://www.northernparrots.com/blog/parrot-nutrition/">Only by consuming as balanced a diet as possible can your Parrot live the long and healthy life you wish for it.</blockquote>
+                
+                </div>
+    
+            </div>
+
+            <div id="dailyDiet">
+                <!--This div contains the h2 heading 'Daily diet', a short paragraph about this, and a table showing the correct amount of pellets to serve
+                for different birds-->
+
+                <h2>Daily diet</h2>
+
+                <p class="para">While the ideal parrot diet does vary depending on species, and we are still learning more about avian nutrition all the time, a good rule of thumb is that a parrot's diet should consist of roughly 60% formulated pellets, 25% high nutrition vegetables, and 15% seed/the occasional treat.
+                    <br>
+                    <br>Often it can be difficult to convert a parrot over to a mostly-pelleted diet, so it might require trying out a few different brands of pellets! One brand I would particularly recommend is Harrison's. Below is a table showing their recommended feeding guidelines for a few different parrots:</p>
+
+                <br>
+
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Adult Lifetime Fine</th>
+                        <th>Supplements</th>
+                    </tr>
+    
+                    <tr>
+                        <th>Cockatiels</th>
+                        <td>1.5 - 3tsp</td>
+                        <td>0.5 - 1tsp</td>
+                    </tr>
+    
+                    <tr>
+                        <th>Quakers</th>
+                        <td>2 - 4tsp</td>
+                        <td>1 - 1.5tsp</td>
+                    </tr>
+    
+                    <tr>
+                        <th>Conures</th>
+                        <td>3 - 5tsp</td>
+                        <td>1.5 - 2tsp</td>
+                    </tr>
+    
+                </table>
+       
+            </div>
+
+            <br>
+
+            <div id="vegetables">
+                <!--This div contains the h2 heading 'Bird-safe Vegetables', a short paragraph about this, and a list (ul) of these vegetables-->
+
+                <h2>Bird-safe Vegetables</h2>
+
+                <p class="para">Vegetables are such a crucial part of your parrot's diet, but it can be difficult to know where to begin! Lots of parrot owners find that their birds prefer vegetables served as 'chop' - a mix of different vegetables chopped up finely together. You could also clip veg up around your birds cage/living area - damp leafy greens and tenderstem brocolli work particularly well for this. 
+                    <br>
+                    <br>
+                    Below is a list of bird-safe vegetables to help you get started!</p>
+                
+                <br>
+
+                <ul id="vegList">
+                    <li>Carrots</li>
+                    <li>Bell Peppers</li>
+                    <li>Broccoli</li>
+                    <li>Tenderstem Broccoli</li>
+                    <li>Kale</li>
+                    <li>Spring Greens</li>
+                    <li>Brussels Sprouts</li>
+                    <li>Romaine Lettuce</li>
+                    <li>Sweet Potato</li>
+                    <li>Butternut Squash</li>
+                    <li>Spinach</li>
+                    <li>Sweetcorn</li>
+                </ul>
+    
+            </div>
+
+            <br>
+
+            <div id="treats">
+                <!--This div contains the h2 heading 'Treats' and a short paragraph about this-->
+
+                <h2>Treats</h2>
+
+                <p class="para">Treats can be a great addition to your parrots diet, if used in moderation!
+                    <br>
+                    <br>
+                    Good options for treats include: sunflower seeds, freeze-dried fruit, small pieces of fruit, and nuts. Remember: human treats are <b>not</b> good treats for your parrot!</p>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <!--The footer contains a 'back to top' button to take you instantly back up to the top of the page,
+            as well as a copyright.-->
+            <a href="#myBody" id="backTop">Back to top</a>
+            <br>
+            <p id="copyright">&copy; Melanie Zadurian 2022</p>
+        </footer>
+
+        <script type="text/javascript" src="../JavaScript/birdWebsite.js"></script>
+
+    </body>
+
+</html>

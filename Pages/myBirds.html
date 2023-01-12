@@ -1,0 +1,153 @@
+<!--This is the html file for the second page (My Birds) of a website on Avian Husbandry, which is something I am interested in.
+Across this page, and the other pages of my website, I have made sure to include all the requirements listed in the compulsory task.
+
+I have left this the same, except for slight additions to meet the new requirements of task 42.
+I have made sure that all my images have like buttons and save buttons.-->
+
+
+<!--DOCTYPE indicates which version of html to load -->
+<!DOCTYPE html>
+
+<!-- html element with head and body elements nested inside it-->
+<html lang="en">
+
+    <head>
+        <!--head element containing the title 'Avian Husbandry - My Birds' as well as
+        the stylesheet information. I've used the same stylesheet for all of my pages, as I wanted them to look reasonably consistent. -->
+
+        <title>Avian Husbandry - My Birds</title>
+
+        <link href="../Styles/myStyles.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body id="myBody" onload="myBirdsLoaded()">
+        <!-- Body contains a header, main, and footer.-->
+
+        <header>
+            <!-- Header contains a main heading for the page, as well as the nav which
+            has links to other pages.-->
+
+            <h1 id="myBirdsHeader">My Birds</h1>
+
+            <nav>
+                <ul id="navList" style="list-style-type: none;">
+                    <li><a href="../index.html" id="homeLink">Home</a></li>
+                    <li><a href="#myBirdsHeader" id="birdsLink">My birds</a></li>
+                    <li><a href="./nutrition.html" id="nutritionLink">Nutrition</a></li>
+                    <li><a href="./enrichment.html" id="enrichmentLink">Enrichment</a></li>
+                    <li><a href="./saveForLater.html" id="saveForLaterLink">Saved for Later</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <br>
+
+        <main>
+            <!--Main contains an introductory paragraph, and four divs (one for each of my birds)-->
+
+            <p class="para"> I am happy to be able to share my life with four wonderful birds! It is a real joy to spend time with them, to learn more about their care and their personalities, and to watch how they play and interact with each other.
+                <br>
+                <br>
+                Below is a little bit of info about each of my birds!</p>
+
+            <br>
+
+            <div id="zelda">
+                <!--This div contains the h2 heading 'Zelda', a short paragraph about her, and a figure containing a photo of her and a relevant caption-->
+
+                <h2>Zelda</h2>
+
+                <p class="para">Zelda is a female crimson bellied conure. She was born on the 21st August 2019, and has been with us since the 1st November 2019. She is incredibly friendly, intelligent, and energetic!</p>
+
+                <br>
+
+                <figure class = "figure">
+                    <img src="../Images/zeldaPhoto.jpg" alt="Zelda, a crimson bellied conure" class="birdPhoto">
+                    <figcaption>Zelda loves to sit on hands! &copy; Melanie Zadurian
+                        <button type="button" class="likeButton">&#9825</button>
+                        <button type="button" class="saveButton">Save for Later?</button>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <br>
+
+            <div id="ayato">
+                <!--This div contains the h2 heading 'Ayato', a short paragraph about him, and a figure containing a photo of him and a relevant caption-->
+
+                <h2>Ayato</h2>
+
+                <p class="para">Ayato is a male pied cockatiel. He has been with us since the 25th April 2019. He used to be incredibly fearful and nervous about leaving his cage, but he has since really come out of his shell! He loves Adora, and is much braver than he used to be (though he is still very cautious at times!)</p>
+
+                <br>
+
+                <figure class="figure">
+                    <img src="../Images/ayatoPhoto.jpg" alt="Ayato, a pied cockatiel" class="birdPhoto">
+                    <figcaption>Ayato has a very long crest! &copy; Melanie Zadurian
+                        <button type="button" class="likeButton">&#9825</button>
+                        <button type="button" class="saveButton">Save for Later?</button>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <br>
+
+            <div id="adora">
+                <!--This div contains the h2 heading 'Adora', a short paragraph about her, and a figure containing a photo of her and a relevant caption-->
+
+                <h2>Adora</h2>
+
+                <p class="para">Adora is a female pearl cockatiel. She has been with us since the 15th September 2019. She came to us in a very bad state, having been kept in terrible conditions and treated very poorly. But she has recovered fantastically! She is healthy, can fly very well, and is very curious and playful. She loves Ayato completely, and spends most of her time with him.</p>
+
+                <br>
+
+                <figure class="figure">
+                    <img src="../Images/adoraPhoto.jpg" alt="Adora, a pearl cockatiel" class="birdPhoto">
+                    <figcaption>Adora often sits on here! &copy; Melanie Zadurian
+                        <button type="button" class="likeButton">&#9825</button>
+                        <button type="button" class="saveButton">Save for Later?</button>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <br>
+
+            <div id="allana">
+                <!--This div contains the h2 heading 'Allana', a short paragraph about her, and a figure containing a photo of her and a relevant caption-->
+
+                <h2>Allana</h2>
+
+                <p class="para">Allana is a female budgie. She has been with us since the 7th August 2019. She is brave and very capable, though she prefers to stay away from hands!</p> 
+    
+                <br>
+    
+                <figure class="figure">
+                    <img src="../Images/allanaPhoto.jpg" alt="Allana, a green and yellow budgie" class="birdPhoto">
+                    <figcaption>Allana's feathers are very bright! &copy; Melanie Zadurian
+                        <button type="button" class="likeButton">&#9825</button>
+                        <button type="button" class="saveButton">Save for Later?</button>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <!--The footer contains a 'back to top' button to take you instantly back up to the top of the page,
+            as well as a copyright.-->
+            <a href="#myBody" id="backTop">Back to top</a>
+            <br>
+            <p id="copyright">&copy; Melanie Zadurian 2022</p>
+        </footer>
+
+        <script type="text/javascript" src="../JavaScript/birdWebsite.js"></script>
+        
+    </body>
+
+</html>

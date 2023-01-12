@@ -1,0 +1,69 @@
+<!--This is the html file for the new page (Save for Later) of a website on Avian Husbandry, which is something I am interested in.
+This page in particular will display the images that the user has chosen to 'Save for Later'
+
+Across this page, and the other pages of my website, I have made sure to include all the requirements listed in the compulsory task.-->
+
+<!--DOCTYPE indicates which version of html to load -->
+<!DOCTYPE html>
+
+<!-- html element with head and body elements nested inside it-->
+<html lang="en">
+
+    <head>
+        <!--head element containing the title 'Avian Husbandry - Save for Later' as well as
+        the stylesheet information. I've used the same stylesheet for all of my pages, as I wanted them to look reasonably consistent. -->
+
+        <title>Avian Husbandry - Save for Later </title>
+
+        <link href="../Styles/myStyles.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body id="myBody" onload="savedForLaterLoaded()">
+        <!-- Body contains a header, main, and footer.-->
+
+        <header>
+            <!-- Header contains a main heading for the page, as well as the nav which
+            has links to other pages.-->
+
+            <h1 id="saveForLaterHeader">Saved for Later</h1>
+
+            <nav>
+                <ul id="navList" style="list-style-type: none;">
+                    <li><a href="../index.html" id="homeLink">Home</a></li>
+                    <li><a href="./myBirds.html" id="birdsLink">My birds</a></li>
+                    <li><a href="./nutrition.html" id="nutritionLink">Nutrition</a></li>
+                    <li><a href="./enrichment.html" id="enrichmentLink">Enrichment</a></li>
+                    <li><a href="#saveForLaterHeader" id="saveForLaterLink">Saved for Later</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <br>
+
+        <main>
+            <!--Main contains an introductory paragraph-->
+
+            <p class="para"> Here are your saved images:</p>
+
+            <br>
+
+            <ul id="savedImages">
+
+            </ul>
+
+        </main>
+
+        <footer>
+            <!--The footer contains a 'back to top' button to take you instantly back up to the top of the page,
+            as well as a copyright.-->
+            <a href="#myBody" id="backTop">Back to top</a>
+            <br>
+            <p id="copyright">&copy; Melanie Zadurian 2022</p>
+        </footer>
+
+        <script type="text/javascript" src="../JavaScript/birdWebsite.js"></script>
+    </body>
+
+</html>

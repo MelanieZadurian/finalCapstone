@@ -1,0 +1,159 @@
+<!--This is the html file for the homepage for a website on Avian Husbandry, which is something I am interested in.
+Across this page, and the other pages of my website, I have made sure to include all the requirements listed in the compulsory task.
+
+I have left this the same, except for slight additions to meet the new requirements of task 42.
+I have made sure that all my images have like buttons and save buttons.-->
+
+<!--DOCTYPE indicates which version of html to load -->
+<!DOCTYPE html>
+
+<!-- html element with head and body elements nested inside it-->
+<html lang="en">
+
+    <head>
+        <!--head element containing the title 'Avian Husbandry - Home' as well as
+        the stylesheet information. I've used the same stylesheet for all of my pages, as I wanted them to look reasonably consistent.-->
+
+        <title>Avian Husbandry - Home</title>
+
+        <link href="./Styles/myStyles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body id="myBody" onload="homePageLoaded()">
+        <!-- Body contains a header, main, and footer.-->
+
+        <header>
+            <!-- Header contains a main heading for the page, as well as the nav which
+            has links to other pages.-->
+
+            <h1 id="homeHeader">Avian Husbandry</h1>
+
+            <nav>
+                <ul id="navList" style="list-style-type: none;">
+                    <li><a href="#homeHeader" id="homeLink">Home</a></li>
+                    <li><a href="./Pages/myBirds.html" id="birdsLink">My birds</a></li>
+                    <li><a href="./Pages/nutrition.html" id="nutritionLink">Nutrition</a></li>
+                    <li><a href="./Pages/enrichment.html" id="enrichmentLink">Enrichment</a></li>
+                    <li><a href="./Pages/saveForLater.html" id="saveForLaterLink">Saved for Later</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <br>
+
+        <main>
+            <!--Main contains a figure, and three divs-->
+
+            <figure>
+                <!--figure contains an image of three of my birds along with a caption to go with it.-->
+
+                <img src="./Images/groupPhoto.jpg" alt="A photo of two cockatiels and a budgie">
+
+                <figcaption>Ayato, Adora, and Allana &copy; Melanie Zadurian 
+                    <button type="button" class="likeButton">&#9825</button>
+                    <button type="button" class="saveButton">Save for Later?</button>
+                </figcaption>
+
+            </figure>
+
+            <br>
+
+            <div id="homeIntro">
+
+                <!--This div contains an introductory paragraph-->
+                
+                <p class="para">Welcome! This site is dedicated to providing information about avian husbandry - in particular, how best to care for parrots. 
+                    <br> 
+                    <br>
+                    Different species of parrot will of course require different care; Lorikeets, for example, require a very different diet to cockatiels!</p>
+
+            </div>
+
+            <br>
+
+            <div id="whoFor">
+
+                <!--This div contains the h2 heading 'Why care for birds?', a paragraph about this, and an aside which contains a link to the 
+                bird content tumblr blog 'todaysbird'.-->
+
+                <h2>Why care for birds?</h2>
+                <p class="para">So why should we make the effort to learn all we can about avian husbandry? Pet birds, budgies in particular, are often bought for children as 'cheap' and 'easy' pets - but this is far from the truth! In reality, parrots are extremely intelligent and demanding, and require (and deserve!) a great deal of care. Parrots can't thrive if they are locked up in a cage all day, fed an improper diet, and not properly stimulated. It's our job to make sure our feathered friends receive the excellent care they deserve!
+                    <br> 
+                    <br>
+                    Living with birds, while difficult, can be extremely rewarding! For all the effort you put into their care, you will be rewarded with an intelligent, interesting, companion to share your home with.</p>
+                
+                <br>
+
+                <aside>For more bird content, why not check out:
+                    <a href="https://todaysbird.tumblr.com/" target="_blank">@todaysbird</a>
+                </aside>    
+
+            </div>
+
+            <br>
+
+            <div id="newsletter">
+
+                <!--This div contains the h2 heading 'Bird Newsletter', along with a submit button form for people to subscribe to a 
+                newsletter-->
+
+                <h2>Bird Newsletter</h2>
+
+                <form>
+                    <p class="para">Want the latest bird news? Contact me here!</p>
+                    <br>
+                    <label>Name (Required):</label>
+                    <input type="text" id="nameInput" required>
+                    <br>
+                    <label>Email address (Required):</label>
+                    <input type="text" id="emailInput" required>
+                    <br>
+                    <label>Message (Optional):</label>
+                    <input type="text" id="messageInput">
+                    <br>
+                    <input type="button" id= "contactMe" value="Submit">
+                </form>
+    
+            </div>
+
+            <br>
+
+            <div id="comments">
+
+                <!--This div contains the h2 heading 'Comments', along with a submit button form for people to submit a
+                    comment.-->
+
+                <h2>Comments</h2>
+
+                <form>
+                    <p class="para">Please leave a comment</p>
+                    <br>
+                    <label>Name:</label>
+                    <input type="text" id="commentNameInput" required>
+                    <br>
+                    <label>Comment:</label>
+                    <input type="text" id="commentInput" required>
+                    <br>
+                    <input type="button" id= "commentButton" value="Submit">
+                </form>
+    
+            </div>
+
+            <br>
+
+        </main>
+
+        <footer>
+            <!--The footer contains a 'back to top' button to take you instantly back up to the top of the page,
+            as well as a copyright.-->
+            <a href="#myBody" id="backTop">Back to top</a>
+            <br>
+            <p id="copyright">&copy; Melanie Zadurian 2022</p>
+        </footer>
+
+        <script type="text/javascript" src="./JavaScript/birdWebsite.js"></script>
+
+    </body>
+
+</html>
